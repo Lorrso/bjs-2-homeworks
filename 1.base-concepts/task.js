@@ -20,12 +20,13 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-	let p = Math.round(percent ** -100 / 12);
-	let s = amount - contribution;
+	
 	let n = countMonths;
+	let p = percent / 12 * 0.01;
+	typeof p.toFixed(3) === "number";
+	let s = amount - contribution;
 	let totalMortgage = (s * (p + (p / (((1 + p) ** n) - 1)))) * n;
-	totalMortgage = totalMortgage.toFixed(2);
-	typeof totalMortgage === "number";
+	typeof totalMortgage.toFixed(2) === "number";
 
 	return totalMortgage;
 }
