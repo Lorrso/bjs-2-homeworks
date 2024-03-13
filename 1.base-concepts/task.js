@@ -23,10 +23,10 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	
 	let n = countMonths;
 	let p = percent / 12 * 0.01;
-	typeof p.toFixed(3) === "number";
 	let s = amount - contribution;
 	let totalMortgage = (s * (p + (p / (((1 + p) ** n) - 1)))) * n;
-	typeof totalMortgage.toFixed(2) === "number";
+	totalMortgage = totalMortgage.toFixed(2);
+	typeof totalMortgage === "number";
 
 	return totalMortgage;
 }
