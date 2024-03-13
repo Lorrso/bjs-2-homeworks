@@ -2,21 +2,18 @@
 
 function solveEquation(a, b, c) {
 	let arr = [];
-	let x;
-	let xFirst;
-	let xSecond;
 	let d = b ** 2 - 4 * a * c;
 
-	if (d < 0) {
-		arr = [];
-	} else if (d = 0) {
-		x = -b / (2 * a);
-		arr.push(x);
-	} else if (d > 0) {
-		xFirst = (-b + Math.sqrt(d)) / (2 * a);
+	if (d > 0) {
+		let xFirst = (-b + Math.sqrt(d)) / (2 * a);
 		arr.push(xFirst);
-		xSecond = (-b - Math.sqrt(d)) / (2 * a);
+		let xSecond = (-b - Math.sqrt(d)) / (2 * a);
 		arr.push(xSecond);
+	} else if (d == 0) {
+		let x = -b / (2 * a);
+		arr.push(x);
+	} else {
+		arr = [];
 	}
 
 	return arr;
