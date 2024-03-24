@@ -7,7 +7,7 @@ function getArrayParams(...arr) {
 		if (min > arr[i]) {
 			min = arr[i];
 		}
-    if (max < arr[i]) {
+		if (max < arr[i]) {
 			max = arr[i];
 		}
 		sum += arr[i];
@@ -76,7 +76,7 @@ function averageEvenElementsWorker(...arr) {
 			countEvenElement++;
 		}
 	}
-  const avg = +(sumEvenElement / countEvenElement).toFixed(2);
+	const avg = +(sumEvenElement / countEvenElement).toFixed(2);
 	return avg;
 }
 
