@@ -2,9 +2,8 @@ function getArrayParams(...arr) {
 	if (arr.length === 0) return 0;
 	let min = arr[0];
 	let max = arr[0];
-	let sum = arr[0];
+	let sum;
 	for (let i = 0; i < arr.length; i++) {
-		sum += arr[i];
 		if (min > arr[i]) {
 			min = arr[i];
 		} else {
