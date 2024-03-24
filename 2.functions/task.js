@@ -41,7 +41,7 @@ function differenceMaxMinWorker(...arr) {
 			max = arr[i];
 		}
 	}
-  const difference = max - min;
+	const difference = max - min;
 	return difference;
 }
 
