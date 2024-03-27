@@ -18,7 +18,9 @@ Student.prototype.addMarks = function(...marksToAdd) {
 }
 
 Student.prototype.getAverage = function() {
-	if (!this.marks) return 0;
+	if (!this.marks || !this.marks.length) {
+        return 0;
+    }
 	const sum = this.marks.reduce((acc, marks) => acc + marks, 0);
 	const avg = sum / this.marks.length;
 	return avg;
@@ -26,5 +28,5 @@ Student.prototype.getAverage = function() {
 Student.prototype.exclude = function(reason) {
 	delete this.subject;
 	delete this.marks;
-	this.exclude = reason;
+	this.excluded = reason;
 }
