@@ -76,9 +76,11 @@ class Library {
 
 	findBookBy(type, value) {
         if (this.books.length == 0) return null;
+        let foundBook;
 		for (type in this.books) {
 			if (this.books[type] === value) {
-				return this.books[type].name;
+				foundBook = this.books[type].name;
+                return foundBook;
 			}
 		}
 	}
