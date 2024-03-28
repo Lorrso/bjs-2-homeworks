@@ -4,7 +4,7 @@ class PrintEditionItem {
 		this.releaseDate = releaseDate;
 		this.pagesCount = pagesCount;
 		this.type = type;
-        this.state = 100;
+		this.state = 100;
 	}
 	set state(state) {
 		if (state < 0) {
@@ -16,7 +16,7 @@ class PrintEditionItem {
 		}
 	}
 	get state() {
-        return this._state;
+		return this._state;
 	}
 	fix() {
 		this.state = this._state * 1.5;
@@ -33,7 +33,7 @@ class Magazine extends PrintEditionItem {
 
 class Book extends PrintEditionItem {
 	constructor(author, name, releaseDate, pagesCount) {
-        super(name, releaseDate, pagesCount);
+		super(name, releaseDate, pagesCount);
 		this.author = author;
 		this.type = `book`;
 	}
@@ -68,7 +68,7 @@ class Library {
 
 	addBook(book) {
 		if (book.state > 30) {
-			Library.books.push(book);
+			books.push(book);
 		} else {
 			console.log(`Перед добавлением {book} в библиотеку настоятельно рекомендуем экземплярчик подклеить.`)
 		}
