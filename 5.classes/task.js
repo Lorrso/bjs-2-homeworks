@@ -68,7 +68,7 @@ class Library {
 
 	addBook(printItem) {
 		if (printItem.state > 30) {
-			books.push(printItem);
+			Library.books.push(printItem);
 		} else {
 			console.log(`Перед добавлением {book} в библиотеку настоятельно рекомендуем экземплярчик подклеить.`)
 		}
