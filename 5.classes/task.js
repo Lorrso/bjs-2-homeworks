@@ -79,7 +79,8 @@ class Library {
         let foundBook;
 		for (type in this.books) {
 			if (this.books[type] === value) {
-				foundBook = this.books[type].name;
+				let index = this.books.indexOf(value)
+				foundBook = this.books[index].name;
                 return foundBook;
 			}
 		}
@@ -90,7 +91,7 @@ class Library {
         let foundBook;
 		for (let book of this.books) {
 			if (book = bookName) {
-				let index = this.books.indexOf(book);
+				let index = this.books.indexOf(bookName);
 				foundBook = this.books[index].name;
 				this.books.splice(index);
 				break;
