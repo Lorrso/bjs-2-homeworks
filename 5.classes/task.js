@@ -76,7 +76,8 @@ class Library {
 
 	findBookBy(type, value) {
         if (this.books.length == 0) return null;
-		let foundBook = this.books.find(book => book.type === value);
+		const key = type;
+		let foundBook = this.books.find(book => book.key === value);
 		return foundBook;
 	}
 
