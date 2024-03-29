@@ -81,6 +81,7 @@ class Library {
 			return this.books[key];
 			}
 		}
+		return null;
 	}
 
 	giveBookByName(bookName) {
