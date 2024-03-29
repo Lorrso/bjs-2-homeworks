@@ -70,7 +70,7 @@ class Library {
 		if (printItem.state > 30) {
 			this.books.push(printItem);
 		} else {
-			console.log(`Перед добавлением {book} в библиотеку настоятельно рекомендуем экземплярчик подклеить.`)
+			console.log(`Перед добавлением ${printItem} в библиотеку настоятельно рекомендуем экземплярчик подклеить.`)
 		}
 	}
 
