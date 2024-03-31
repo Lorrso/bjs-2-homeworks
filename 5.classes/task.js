@@ -78,7 +78,7 @@ class Library {
         if (this.books.length == 0) return null;
 		for (const book of this.books) {
 			if (book[key] === value) {
-			return book[key].name;
+			return book.name;
 			}
 		}
 		return null;
