@@ -76,9 +76,9 @@ class Library {
 
 	findBookBy(key, value) {
         if (this.books.length == 0) return null;
-		for (key in this.books) {
-			if (this.books[key] === value) {
-			return this.books[key];
+		for (const book of this.books) {
+			if (book[key] === value) {
+			return book[key];
 			}
 		}
 		return null;
