@@ -25,10 +25,10 @@ class Triangle {
 		this.c = c;
 	}
 	get perimeter() {
-		return perimeter = this.a + this.b + this.c;
+		return this.a + this.b + this.c;
 	}
 	get area() {
-		return area = +(Math.sqrt((this.perimeter / 2) * ((this.perimeter / 2) - a) * ((this.perimeter / 2) - b) * ((this.perimeter / 2) - c))).toFixed(3);
+		return +(Math.sqrt((this.perimeter / 2) * ((this.perimeter / 2) - a) * ((this.perimeter / 2) - b) * ((this.perimeter / 2) - c))).toFixed(3);
 	}
 }
 
