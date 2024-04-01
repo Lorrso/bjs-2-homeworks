@@ -78,8 +78,7 @@ class Library {
         if (this.books.length == 0) return null;
 		for (const book of this.books) {
 			if (book[key] === value) {
-			let i = book[key].findIndex;
-			return this.books[i];
+			return book;
 			}
 		}
 		return null;
